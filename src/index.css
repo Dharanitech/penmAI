@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Fraunces', 'Noto Sans Tamil', 'Noto Sans Devanagari', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Noto Sans Tamil', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #181326;
+    line-height: 1.65;
+  }
+
+  h1, h2, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes soundWave {
+  0%, 100% {
+    height: 12px;
+  }
+  50% {
+    height: 38px;
+  }
+}
+
+.animate-sound-wave-1 {
+  animation: soundWave 1.2s ease-in-out infinite 0.1s;
+}
+.animate-sound-wave-2 {
+  animation: soundWave 1.2s ease-in-out infinite 0.25s;
+}
+.animate-sound-wave-3 {
+  animation: soundWave 1.2s ease-in-out infinite 0.4s;
+}
+.animate-sound-wave-4 {
+  animation: soundWave 1.2s ease-in-out infinite 0.15s;
+}
+.animate-sound-wave-5 {
+  animation: soundWave 1.2s ease-in-out infinite 0.35s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

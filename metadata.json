@@ -1,0 +1,6 @@
+{
+  "name": "penmAI — Her Voice. Her Language. Her Access.",
+  "description": "Voice-first digital accessibility layer helping first-time women users access essential government services, schemes, and skills in Tamil, English, and Hindi with zero digital barriers.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
